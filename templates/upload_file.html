@@ -1,0 +1,74 @@
+ <!doctype html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Upload an excel file</title>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+  <link href="static/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/main.css" rel="stylesheet">
+ </head>
+
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-mid-1">
+        <h1>Get Weather Data for Single Location</h1>
+      </div>
+      <form action="" method=post>
+        <div class="form-group">
+          <label for="apiKey">API Key</label>
+          <input type="password" class="form-control" name="api_key" placeholder="Example (fake): D4zX7C7fYgEKgGawSAiOIbtaPOxDK">
+          <br>
+          <label for="exampleInputName2">API Secret</label>
+          <input type="password" class="form-control" name="api_secret" placeholder="Example (fake): c3ghw3T8DSoolG">
+          <br>
+          <label for="exampleInputName2">Latitude</label>
+          <input type="text" class="form-control" name="latitude_input" placeholder="12.6">
+          <br>
+          <label for="exampleInputEmail2">Longitude</label>
+          <input type="text" class="form-control" name="longitude_input" placeholder="-8.0">
+          <br>
+          <label for="dateInput1">Enter a date after 01-2000-01 in MM-YYYY-DD format. If choosing "Forecast", you must select tomorrow's date</label>
+          <input type="date" class="form-control" name="start_date" min="2000-01-01" placeholder="01-2016-01"><br>
+          <label for="dateInput2">Enter a date after 01-2000-02 in MM-YYYY-DD format. If choosing "Forecast", you must input a date no more than 7 days from tomorrow</label>
+          <input type="date" class="form-control" name="end_date" min="2000-01-02" placeholder="01-2016-02"><br>
+        </div>
+        <button type="submit" name='btn' value='observation' class="btn btn-default">Get Historical Data</button>
+        <button type="submit" name='btn' value='forecast' class="btn btn-default">Get Forecast Data</button>
+      </form>
+    </div>
+
+
+    <!--
+    </div>
+    <div class="row">
+        <div class="col-mid-1">
+          <h1>Upload File for Bulk Search</h1>
+        </div>
+        <div class="cold-mid-4">
+          <h1></h1>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-mid-1"></div>
+      <div class="col-mid-3">
+        <form action="" method=post enctype=multipart/form-data>
+        <p><input type=file name=file>
+        <input type=submit value=Upload>
+        </form>
+      </div>
+    </div>
+    -->
+  </div>
+
+  <script
+        src="https://code.jquery.com/jquery-3.0.0.min.js"
+        integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="
+        crossorigin="anonymous"></script>
+  <!--<script src="static/moment.js"></script>
+  <script src="static/combodate.js"></script>-->
+
+</body>
